@@ -1,4 +1,4 @@
-package nowcoder;
+package nowcoder.course.sort;
 
 /**
  * Created by Chen on 2017/4/3.

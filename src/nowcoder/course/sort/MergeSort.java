@@ -1,9 +1,10 @@
-package nowcoder;
+package nowcoder.course.sort;
 
 /**
  * 牛客网排序部分练习
  * 归并排序
  * 主要是p<r这个递归退出条件, 以及merge函数中最后合并比较大小的时候各个数组的下标变化范围要小心
+ * space: O(n), 最后合并这一下需要创立两个平均长度n/2的L和R数组, 因此额外空间是O(n)
  * Created by Chen on 2017/4/3.
  */
 public class MergeSort {

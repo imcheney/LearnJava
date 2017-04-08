@@ -1,16 +1,16 @@
-package nowcoder.test;
+package nowcoder.course.sort.test;
 
-import nowcoder.MergeSort;
+import nowcoder.course.sort.ShellSort;
 
 /**
  * Created by Chen on 2017/4/3.
  */
-public class MergeSortTest {
+public class ShellSortTest {
     public static void main(String[] args) {
-        MergeSort mergeSort = new MergeSort();
+        ShellSort shellSort = new ShellSort();
         int[] A = {1,2,3,5,2,3};
         int n = 6;
-        mergeSort.mergeSort(A, n);
+        shellSort.shellSort(A, n);
         for (int e:A) {
             System.out.println("e = " + e);
         }

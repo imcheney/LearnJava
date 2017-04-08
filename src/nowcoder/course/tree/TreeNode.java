@@ -1,4 +1,4 @@
-package nowcoder;
+package nowcoder.course.tree;
 
 /**
  * 二叉树定义
