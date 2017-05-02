@@ -11,6 +11,7 @@ import java.lang.reflect.Method;
  * Created by Chen on 27/04/2017.
  */
 public class ReflectShow {
+    private Person person;
 
     /**
      * 构造方法
@@ -22,6 +23,7 @@ public class ReflectShow {
 
             //根据类的全路径进行类的加载, 返回该类的Class对象
             Class myclass = Class.forName(classpath);
+
             Method[] arrOfMethod = myclass.getDeclaredMethods();
             System.out.println("获取Method信息:");
             for (Method method:arrOfMethod) {
@@ -36,4 +38,21 @@ public class ReflectShow {
             e.printStackTrace();
         }
     }
+
+    public ReflectShow(Person person) {
+        this.person = person;
+        //根据类的全路径进行类的加载, 返回该类的Class对象
+        Class myclass = person.getClass();
+        Method[] arrOfMethod = myclass.getDeclaredMethods();
+        System.out.println("获取Method信息:");
+        for (Method method:arrOfMethod) {
+            System.out.println(method.toString());
+        }
+        Field[] arrOfFields = myclass.getDeclaredFields();
+        System.out.println("获取Field信息:");
+        for (Field field:arrOfFields) {
+            System.out.println(field.toString());
+        }
+    }
 }
+
